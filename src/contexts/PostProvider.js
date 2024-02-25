@@ -3,7 +3,7 @@ import PostContext from "./PostContext";
 import axios from "axios";
 
 export const PostProvider = (props) => {
-  const [post, setPost] = useState([]);
+  const [posts, setPosts] = useState([]);
   const baseUrl = "http://localhost:3001/posts";
 
   useEffect(() => {
@@ -14,58 +14,44 @@ export const PostProvider = (props) => {
   }, []);
 
   function getAllPosts() {
-    return axios.get(baseUrl).then((response) => setPost(response.data));
+    return axios.get(baseUrl).then((response) => setPosts(response.data));
   }
 
-  function getPost(id) {
-    const postUrl = `${baseUrl}/${id}`;
+function getPost(id){
+  return posts.find(post => post.id === parseInt(id))
+}
 
-    return axios.get(postUrl).then((response) => {
-      setPost([response.data]);
-      return response.data;
-    });
-  }
-
-  function addPost(post) {
-    return axios.post(baseUrl, post).then((response) => {
+  function addPost(post){
+    return axios.post(baseUrl, post)
+    .then(response => {
       getAllPosts();
-      return response.data;
-    });
-  };
+      return new Promise(resolve => resolve(response.data));
+      }
+    );
+  }
 
-    function editPost(updatedPost){
-        const postId = updatedPost.postId;
-        const tweetUrl = `${baseUrl}/${postId}`;
-        
-        return axios.put(postUrl, updatedPost).then(response => {
-            setPost((prevPosts) => {
-                return prevPosts.map((post) => {
-                    if (post.postId === postId){
-                        return response.data;
-                    }
-                });
-                return getAllPosts();
-            })
-        })
-    };
+function deletePost(id){
+  axios.delete(`${baseUrl}/${id}`)
+  .then(getAllPosts)
+}
 
-    function deletePost(id){
-        const postUrl = `${baseUrl}/${id}`
-
-        return axios.delete(postUrl).then(() => {
-            getAllPosts();
-        })
-    }
+function updatePost(id){
+  return axios.put(`${baseUrl}/${id}`)
+  .then(response => {
+    getAllPosts()
+    return new Promise((resolve) => resolve(response.data))
+  })
+}
 
   return (
     <PostContext.Provider
       value={{
-        post,
+        posts,
         getAllPosts,
         getPost,
         addPost,
-        editPost,
-        deletePost
+        deletePost,
+        updatePost
       }}
     >
       {props.children}
