@@ -37,7 +37,7 @@ function UpdateItem() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    addPost(item)
+    updatePost(id, item)
       .then(() => navigate('/'))
       .catch((error) => {
         console.error('Error adding post:', error);

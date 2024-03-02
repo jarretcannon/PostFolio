@@ -35,8 +35,8 @@ function deletePost(id){
   .then(getAllPosts)
 }
 
-function updatePost(id){
-  return axios.put(`${baseUrl}/${id}`)
+function updatePost(id, post){
+  return axios.put(`${baseUrl}/${id}`, post)
   .then(response => {
     getAllPosts()
     return new Promise((resolve) => resolve(response.data))

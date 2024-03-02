@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import PostContext from "../contexts/PostContext";
 import {
 
-  Button,
+  Button, Card,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -20,15 +20,18 @@ function HomePage() {
   return (
    
       <div>
-        <h1>PostFolio</h1>
         {posts.map((post) => (
           <div key={post.id} className="post-container">
-            <h2 className="post-title">{post.title}</h2>
-            <p className="post-content">{post.content}</p>
-            <Link to={`/${posts.id}/edit`} key={post.id} className="btn btn-primary mx-3">Edit</Link>
+            <Card style={{ width: '18rem', margin: 'auto', display: 'block' }}>
+               <Card.Body>
+            <Card.Title>{post.title}</Card.Title>
+            <Card.Text>{post.content}</Card.Text>
+            <Link to={`/${post.id}/edit`} key={post.id} className="btn btn-primary mx-3">Edit</Link>
             <Button variant="danger" onClick={() => handleDelete(post.id)}>
               Delete
             </Button>
+            </Card.Body>
+            </Card>
           </div>
         ))}
       </div> )

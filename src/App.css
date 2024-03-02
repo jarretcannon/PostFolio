@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+
+
 .main{
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
+  padding-top: 56px;
 }
 
-.main-container {
-  padding-top: 56px; /* Adjust this value based on your navbar's height */
-}
+
+
+

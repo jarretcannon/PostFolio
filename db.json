@@ -1,10 +1,26 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "jarretc2000@gmail.com",
+      "password": "$2a$10$sln6pFGFS5WsMeKmikKfIOAePaYlY/t1qoP9IyqUTDWtDmVG0ybuy",
+      "id": 1
+    },
+    {
+      "email": "jarretc200@gmail.com",
+      "password": "$2a$10$vsBDwTIa32W9sE6BXXvHMesG4VN6mpzcry8JHxeBcL1NN0dpcYM1y",
+      "id": 2
+    }
+  ],
   "posts": [
     {
-      "title": "Test",
-      "content": "Test",
+      "title": "Title",
+      "content": "Content",
       "id": 1
+    },
+    {
+      "title": "Title",
+      "content": "Content",
+      "id": 2
     }
   ]
 }
