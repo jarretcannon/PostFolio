@@ -3,12 +3,12 @@ import axios from "axios";
 
 
 export const UserProvider = (props) => {
-    const baseUrl = "http://localhost:3001/users/"
+    const baseUrl = "http://localhost:3001"
 
     function createUser(email, password){
         let user = { email, password };
 
-        return axios.post(baseUrl, user)
+        return axios.post(`${baseUrl}/users`, user)
         .then(response => {
             return new Promise(resolve => resolve(response.data));
         })
