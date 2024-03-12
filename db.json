@@ -15,35 +15,36 @@
       "password": "$2a$10$eMjWT1QK8aKdwhkdMpRFV.EOvUZf8bb42Zgy9HN/20737WzV1mA6S",
       "firstName": "Jan",
       "id": 3
+    },
+    {
+      "email": "tatum@gmail.com",
+      "password": "$2a$10$n1fwLdLvjgEh/71/UOhkNuh8pyEZkwgkFOVMb5f6Ed3Wt7gjvBhtK",
+      "firstName": "Tatum",
+      "id": 4
+    },
+    {
+      "email": "jarret@gmail.com",
+      "password": "$2a$10$VBsyChKNXd7LuVMAkGsIGedhzgDNHux/lFsQ50ud.eW7YiFunw0Qq",
+      "fullName": "Jarret Cannon",
+      "id": 5
     }
   ],
   "posts": [
     {
-      "title": "Title",
-      "content": "Content",
-      "id": 1
+      "title": "Would've, Could've, Should've",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/0aV5uARAknQgYhBaK944FP?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Mix Engineer",
+      "caption": "Great song!",
+      "userId": 4,
+      "id": 7
     },
     {
-      "title": "Title",
-      "content": "Content",
-      "id": 2
-    },
-    {
-      "title": "Test",
-      "content": "Test content",
-      "id": 3
-    },
-    {
-      "title": "another",
-      "content": "post",
-      "userId": 3,
-      "id": 4
-    },
-    {
-      "title": "post",
-      "content": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/2lJn77IeZAP9cmv6DPXOrL?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
-      "userId": 3,
-      "id": 5
+      "title": "Sarah's Place",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/1vhbThkFnqAHbZp0fEjXE4?utm_source=generator&theme=0\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Mix Engineer",
+      "caption": "",
+      "userId": 5,
+      "id": 8
     }
   ]
 }

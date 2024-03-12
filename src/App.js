@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Container, Nav, Navbar, Stack } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { PostProvider } from "./contexts/PostProvider";
 import HomePage from "./components/HomePage";
@@ -14,6 +14,8 @@ import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 
 function App() {
+
+  
   return (
     <BrowserRouter>
       <div className="nav">
@@ -27,9 +29,6 @@ function App() {
               <Nav.Link as={Link} to="/profile">
                 Profile
               </Nav.Link>
-              <Nav.Link as={Link} to="/create">
-                Create
-              </Nav.Link>
               <Nav.Link as={Link} to="/signup">
                 Sign Up
               </Nav.Link>
@@ -40,6 +39,11 @@ function App() {
           </Container>
         </Navbar>
       </div>
+      <div className="create-button">
+      <Button as={Link} to="/create" variant="primary" className="circle-button">
+        +
+      </Button>
+    </div>
       <div className="main">
         <Container className="main-container">
           <Stack>

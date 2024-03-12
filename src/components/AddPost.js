@@ -7,12 +7,14 @@ import PostContext from '../contexts/PostContext';
 function CreatePost() {
   const [item, setItem] = useState({
     title: '',
-    content: '',
+    embed: '',
+    credit: '',
+    caption:'',
   });
 
   const { addPost } = useContext(PostContext);
   const navigate = useNavigate();
-  const { title, content } = item;
+  const { title, embed, credit, caption } = item;
 
   function handleChange(event) {
     const { id, value } = event.target;
@@ -35,7 +37,7 @@ function CreatePost() {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
-        <Form.Label>Title</Form.Label>
+        <Form.Label>Song Title</Form.Label>
         <Form.Control
           type="text"
           id="title"
@@ -45,15 +47,26 @@ function CreatePost() {
         />
       </Form.Group>
       <Form.Group className="mb-3">
-        <Form.Label>Content</Form.Label>
+        <Form.Label>Embed Code</Form.Label>
         <Form.Control
           type="text"
-          id="content"
-          name="content"
-          value={content}
+          id="embed"
+          name="embed"
+          value={embed}
           onChange={handleChange}
         />
       </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Label>Credits</Form.Label>
+        <Form.Control
+          type="text"
+          id="credit"
+          name="credit"
+          value={credit}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      
       <Button type="submit">Save</Button>
     </Form>
   );

@@ -23,8 +23,8 @@ export const UserProvider = (props) => {
         console.log(user);
     }
 
-    function createUser(email, password, firstName){
-        let user = { email, password, firstName };
+    function createUser(email, password, fullName){
+        let user = { email, password, fullName };
 
         return axios.post(`${baseUrl}/users`, user)
         .then(response => {

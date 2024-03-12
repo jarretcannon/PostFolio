@@ -21,11 +21,11 @@ const SignIn = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <h1>LOGIN</h1>
-            <span>Username  </span>
+            <h1>Sign In</h1>
+          
             <input placeholder="Enter E-mail" type="text" name="email" onChange={e => setEmail(e.target.value)} />
             <br></br><br></br>
-            <span>Password  </span>
+          
             <input placeholder="Enter password" type="password" name="password" onChange={e => setPassword(e.target.value)} />
             <br /><br></br>
             <button>

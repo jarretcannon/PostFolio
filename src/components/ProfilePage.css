@@ -1,0 +1,21 @@
+/* ProfilePage.css */
+
+.profile-container {
+    background-color: black;
+    color: white;
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  .profile-photo {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+  .profile-info {
+    text-align: left;
+  }
+  
+  /* Add more styles as needed */
+  
+  

@@ -9,12 +9,14 @@ function UpdateItem() {
   const { id } = useParams();
   const [item, setItem] = useState({
     title: '',
-    content: '',
+    embed: '',
+    credit: '',
+    caption:'',
   });
 
   const { updatePost, post, getPost, addPost } = useContext(PostContext);
   const navigate = useNavigate();
-  const { title, content } = item;
+  const { title, embed, credit, caption } = item;
 
   useEffect(() => {
     if (id === undefined) return;
@@ -47,7 +49,7 @@ function UpdateItem() {
   return (
     <Form onSubmit={handleSubmit}>
     <Form.Group className="mb-3">
-      <Form.Label>Title</Form.Label>
+      <Form.Label>Song Title</Form.Label>
       <Form.Control
         type="text"
         id="title"
@@ -57,15 +59,26 @@ function UpdateItem() {
       />
     </Form.Group>
     <Form.Group className="mb-3">
-      <Form.Label>Content</Form.Label>
+      <Form.Label>Embed Code</Form.Label>
       <Form.Control
         type="text"
-        id="content"
-        name="content"
-        value={content}
+        id="embed"
+        name="embed"
+        value={embed}
         onChange={handleChange}
       />
     </Form.Group>
+    <Form.Group className="mb-3">
+      <Form.Label>Credits</Form.Label>
+      <Form.Control
+        type="text"
+        id="credit"
+        name="credit"
+        value={credit}
+        onChange={handleChange}
+      />
+    </Form.Group>
+    
     <Button type="submit">Save</Button>
   </Form>
   );

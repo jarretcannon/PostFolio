@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const SignUp = ()=>{
     const [email, setEmail] = useState("");
-    const [firstName, setFirstName] = useState("");
+    const [fullName, setFullName] = useState("");
     const [password, setPassword] = useState("");
 
     let { createUser } = useContext(UserContext);
@@ -14,7 +14,7 @@ const SignUp = ()=>{
 
     function handleSubmit(event) {
         event.preventDefault();
-        createUser(email, password, firstName).then(() => {
+        createUser(email, password, fullName).then(() => {
             navigate('/signin');
         }).catch(error => {
             console.log(error);
@@ -24,14 +24,14 @@ const SignUp = ()=>{
 
     return (
         <form onSubmit={handleSubmit}>
-            <h1>REGISTER</h1>
-            <span>E-mail  </span>
+            <h1>Sign Up</h1>
+         
             <input placeholder="Enter Email" type="text" name="email" value={email} onChange={e => setEmail(e.target.value)} />
             <br></br><br></br>
-            <span>First name  </span>
-            <input placeholder="Enter First Name" type="text" name="firstName" value={firstName} onChange={e => setFirstName(e.target.value)} />
+            
+            <input placeholder="Enter Full Name" type="text" name="fullName" value={fullName} onChange={e => setFullName(e.target.value)} />
             <br></br><br></br>
-            <span>Password  </span>
+         
             <input placeholder="Enter Password" type="password" name="password" value={password} onChange={e => setPassword(e.target.value)} />
             <br /><br></br>
             <button>Sign Up</button>
