@@ -23,7 +23,7 @@ const SignIn = () => {
         <form onSubmit={handleSubmit}>
             <h1>LOGIN</h1>
             <span>Username  </span>
-            <input placeholder="Enter username" type="text" name="email" onChange={e => setEmail(e.target.value)} />
+            <input placeholder="Enter E-mail" type="text" name="email" onChange={e => setEmail(e.target.value)} />
             <br></br><br></br>
             <span>Password  </span>
             <input placeholder="Enter password" type="password" name="password" onChange={e => setPassword(e.target.value)} />

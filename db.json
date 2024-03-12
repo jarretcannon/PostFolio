@@ -9,6 +9,12 @@
       "email": "jarretc200@gmail.com",
       "password": "$2a$10$vsBDwTIa32W9sE6BXXvHMesG4VN6mpzcry8JHxeBcL1NN0dpcYM1y",
       "id": 2
+    },
+    {
+      "email": "jan.pevny@bethel.com",
+      "password": "$2a$10$eMjWT1QK8aKdwhkdMpRFV.EOvUZf8bb42Zgy9HN/20737WzV1mA6S",
+      "firstName": "Jan",
+      "id": 3
     }
   ],
   "posts": [
@@ -21,6 +27,23 @@
       "title": "Title",
       "content": "Content",
       "id": 2
+    },
+    {
+      "title": "Test",
+      "content": "Test content",
+      "id": 3
+    },
+    {
+      "title": "another",
+      "content": "post",
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "title": "post",
+      "content": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/2lJn77IeZAP9cmv6DPXOrL?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "userId": 3,
+      "id": 5
     }
   ]
 }

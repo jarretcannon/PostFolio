@@ -28,6 +28,7 @@ function CreatePost() {
       .then(() => navigate('/'))
       .catch((error) => {
         console.error('Error adding post:', error);
+        alert(error.message)
       });
   }
 
