@@ -10,11 +10,13 @@ import "./ProfilePage.css";
 
 function HomePage() {
   const { posts, getAllPosts, getPosts, deletePost, getPostsByUserId } = useContext(PostContext);
-  let { user } = useContext(UserContext);
+  let { user, getUserById } = useContext(UserContext);
 
   const handleDelete = (id) => {
     deletePost(id);
   };
+
+
 
   return (
     <div>
@@ -25,7 +27,7 @@ function HomePage() {
             <div className="card-body">
               <h5 className="card-title">{post.title}</h5>
               <div dangerouslySetInnerHTML={{ __html: post.embed }} />
-              <h7>{user?.fullName}</h7>
+              <h7>{getUserById(post.userId)?.fullName}</h7>
               <p className="card-text">Credits: {post.credit}</p>
              
             </div>

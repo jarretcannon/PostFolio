@@ -49,7 +49,8 @@ function CreatePost() {
       <Form.Group className="mb-3">
         <Form.Label>Embed Code</Form.Label>
         <Form.Control
-          type="text"
+          as="textarea"
+          rows="5"
           id="embed"
           name="embed"
           value={embed}
