@@ -45,10 +45,17 @@ export const UserProvider = (props) => {
         );
     }
 
+    function signOutUser() {
+        localStorage.removeItem("myCoffeeToken");
+        localStorage.removeItem("user");
+        setUser({});
+      }
+    
     return (
         <UserContext.Provider value={{
             createUser,
             signInUser,
+            signOutUser,
             user
         }}>{props.children}</UserContext.Provider>
     )

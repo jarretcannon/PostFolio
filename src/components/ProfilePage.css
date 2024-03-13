@@ -16,6 +16,11 @@
     text-align: left;
   }
   
+  .card {
+    background-color: white;
+    /* Add any other card-specific styles here */
+  }
+  
   /* Add more styles as needed */
   
   

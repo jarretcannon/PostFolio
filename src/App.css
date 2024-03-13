@@ -1,15 +1,13 @@
 /* Set global html and body styles */
 html, body {
-  background-color: black;
+ 
   color: white;
   margin: 0;
   padding: 0;
 }
 
 /* Navbar styles */
-.navbar {
-  background-color: black;
-}
+
 
 .navbar-brand {
   color: white !important;
@@ -22,7 +20,7 @@ html, body {
 /* Card styles */
 .post-container,
 .card {
-  background-color: black;
+  
   color: white;
 }
 
@@ -57,7 +55,9 @@ html, body {
   font-size: 24px;
 }
 
-
+*{
+background-color: black;
+}
 
 
 
