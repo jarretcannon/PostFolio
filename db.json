@@ -2,49 +2,95 @@
   "users": [
     {
       "email": "jarretc2000@gmail.com",
-      "password": "$2a$10$sln6pFGFS5WsMeKmikKfIOAePaYlY/t1qoP9IyqUTDWtDmVG0ybuy",
+      "password": "$2a$10$6obfidMo9XKH5.nwwIO.Kuo6ElyN5./6DOi8NpQRnfiHR.YOECP9C",
+      "fullName": "Jarret Cannon",
       "id": 1
     },
     {
-      "email": "jarretc200@gmail.com",
-      "password": "$2a$10$vsBDwTIa32W9sE6BXXvHMesG4VN6mpzcry8JHxeBcL1NN0dpcYM1y",
+      "email": "Aaron@gmail.com",
+      "password": "$2a$10$9Fwf9J9MDxSwE0RiwNO6ce6zn.wDcUVCifyug6QOKC.ZFO3iaaYuu",
+      "fullName": "Aaron Sterling",
       "id": 2
     },
     {
-      "email": "jan.pevny@bethel.com",
-      "password": "$2a$10$eMjWT1QK8aKdwhkdMpRFV.EOvUZf8bb42Zgy9HN/20737WzV1mA6S",
-      "firstName": "Jan",
+      "email": "jon@gmail.com",
+      "password": "$2a$10$2qXuvZIl6rVHYMahwZdHhujEcaZ24CKB5reaj7iCpAQUJor6mDopy",
+      "fullName": "Jon Zane",
       "id": 3
     },
     {
-      "email": "tatum@gmail.com",
-      "password": "$2a$10$n1fwLdLvjgEh/71/UOhkNuh8pyEZkwgkFOVMb5f6Ed3Wt7gjvBhtK",
-      "fullName": "Tatum",
+      "email": "test@gmail.com",
+      "password": "$2a$10$rL2wqA8yw0FRKCPC9w7UO.JsGbp44FGN1sbBBsTelJWRlj.41RUG2",
+      "fullName": "redding, ca",
+      "location": "https://images.pexels.com/photos/20195326/pexels-photo-20195326/free-photo-of-a-woman-in-a-black-hoodie-and-sunglasses.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "photo": "test",
       "id": 4
     },
     {
-      "email": "jarret@gmail.com",
-      "password": "$2a$10$VBsyChKNXd7LuVMAkGsIGedhzgDNHux/lFsQ50ud.eW7YiFunw0Qq",
-      "fullName": "Jarret Cannon",
+      "email": "jar@gmail.com",
+      "password": "$2a$10$WRdbUHke73Ac5NBnjf/7D.jsVFIcbEDf0fQcTHyCg8FHeRlEbiTQK",
+      "fullName": "redding, ca",
+      "location": "https://images.pexels.com/photos/20195326/pexels-photo-20195326/free-photo-of-a-woman-in-a-black-hoodie-and-sunglasses.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "photo": "test",
       "id": 5
+    },
+    {
+      "email": "g@gmail.com",
+      "password": "$2a$10$rs6yTZF7LGwtb7tx0jmf.OpKhEQso9htdtVUjp0LDVEVvzsNN//JO",
+      "fullName": "redding, ca",
+      "location": "https://images.pexels.com/photos/20195326/pexels-photo-20195326/free-photo-of-a-woman-in-a-black-hoodie-and-sunglasses.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "photo": "pass",
+      "id": 6
     }
   ],
   "posts": [
     {
-      "title": "Would've, Could've, Should've",
-      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/0aV5uARAknQgYhBaK944FP?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
-      "credit": "Mix Engineer",
-      "caption": "Great song!",
-      "userId": 4,
-      "id": 7
+      "title": "Lost On A Trail",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/3AxnCQ50cpAFlKa4c1sl26?utm_source=generator&theme=0\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Producer/Mix Engineer",
+      "caption": "",
+      "userId": 1,
+      "id": 1
     },
     {
-      "title": "Sarah's Place",
-      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/1vhbThkFnqAHbZp0fEjXE4?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
-      "credit": "Mix Engineer",
+      "title": "Keep Going",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/0sLlQqdi5bFmFPagpCxhRe?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Producer/Mix Engineer",
       "caption": "",
-      "userId": 5,
-      "id": 8
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "Promise Keeper",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7kT44Sm9MhLWQAbdM3IiTF?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Producer/Mix Engineer",
+      "caption": "",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "I Guess",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/0rkKuNq4U8E8KTLq7RRl1Z?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Drums",
+      "caption": "",
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "title": "Green Eyes",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/1FoCSrNyUVF00C8foohH2G?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Drums",
+      "caption": "",
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "title": "Trouble",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/4SDSJtOAM2kOF1MvOnjbxL?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Artist",
+      "caption": "",
+      "userId": 3,
+      "id": 6
     }
   ]
 }

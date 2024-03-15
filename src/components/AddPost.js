@@ -37,8 +37,9 @@ function CreatePost() {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
-        <Form.Label>Song Title</Form.Label>
+      
         <Form.Control
+        placeholder='Song Title'
           type="text"
           id="title"
           name="title"
@@ -47,8 +48,9 @@ function CreatePost() {
         />
       </Form.Group>
       <Form.Group className="mb-3">
-        <Form.Label>Embed Code</Form.Label>
+        
         <Form.Control
+        placeholder='Embed Code'
           as="textarea"
           rows="5"
           id="embed"
@@ -58,8 +60,9 @@ function CreatePost() {
         />
       </Form.Group>
       <Form.Group className="mb-3">
-        <Form.Label>Credits</Form.Label>
+        
         <Form.Control
+        placeholder='Credits'
           type="text"
           id="credit"
           name="credit"

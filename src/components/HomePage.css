@@ -18,6 +18,7 @@
   
   .card {
     background-color: white;
+    
     /* Add any other card-specific styles here */
   }
   
@@ -32,9 +33,15 @@
   .post-container {
     width: 300px; /* Set the width of each card */
     height: 400px; /* Set the height of each card */
+    margin-bottom: 100px; /* Add space between each card vertically */
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
   
-  
-  /* Add more styles as needed */
   
   

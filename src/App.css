@@ -9,13 +9,13 @@ html, body {
 /* Navbar styles */
 
 
-.navbar-brand {
+/* .navbar-brand {
   color: white !important;
 }
 
 .navbar a {
   color: white !important;
-}
+} */
 
 /* Card styles */
 .post-container,
@@ -55,9 +55,9 @@ html, body {
   font-size: 24px;
 }
 
-*{
+/* *{
 background-color: black;
-}
+} */
 
 
 

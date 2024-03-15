@@ -6,7 +6,7 @@ import axios from "axios";
 export const UserProvider = (props) => {
     const baseUrl = "http://localhost:3001"
     const [user, setUser] = useState({});
-    const [allUsers, setAllUsers] = useState({});
+    const [allUsers, setAllUsers] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
@@ -33,8 +33,8 @@ export const UserProvider = (props) => {
         return allUsers.find(user => user.id === parseInt(id))
     }
 
-    function createUser(email, password, fullName){
-        let user = { email, password, fullName };
+    function createUser(email, password, fullName, location, photo ){
+        let user = { email, fullName, location, photo, password };
 
         return axios.post(`${baseUrl}/users`, user)
         .then(response => {
