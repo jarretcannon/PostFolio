@@ -1,15 +1,15 @@
-import { useState, useContext } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import { useNavigate } from 'react-router-dom';
-import PostContext from '../contexts/PostContext';
+import { useState, useContext } from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";
+import PostContext from "../contexts/PostContext";
 
 function CreatePost() {
   const [item, setItem] = useState({
-    title: '',
-    embed: '',
-    credit: '',
-    caption:'',
+    title: "",
+    embed: "",
+    credit: "",
+    caption: "",
   });
 
   const { addPost } = useContext(PostContext);
@@ -27,19 +27,21 @@ function CreatePost() {
   function handleSubmit(event) {
     event.preventDefault();
     addPost(item)
-      .then(() => navigate('/'))
+      .then(() => navigate("/"))
       .catch((error) => {
-        console.error('Error adding post:', error);
-        alert(error.message)
+        console.error("Error adding post:", error);
+        alert(error.message);
       });
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form
+      onSubmit={handleSubmit}
+      style={{ paddingLeft: "200px", paddingRight: "200px" }}
+    >
       <Form.Group className="mb-3">
-      
         <Form.Control
-        placeholder='Song Title'
+          placeholder="Song Title"
           type="text"
           id="title"
           name="title"
@@ -48,11 +50,10 @@ function CreatePost() {
         />
       </Form.Group>
       <Form.Group className="mb-3">
-        
         <Form.Control
-        placeholder='Embed Code'
+          placeholder="Embed Code"
           as="textarea"
-          rows="5"
+          rows="2"
           id="embed"
           name="embed"
           value={embed}
@@ -60,9 +61,8 @@ function CreatePost() {
         />
       </Form.Group>
       <Form.Group className="mb-3">
-        
         <Form.Control
-        placeholder='Credits'
+          placeholder="Credits"
           type="text"
           id="credit"
           name="credit"
@@ -70,7 +70,7 @@ function CreatePost() {
           onChange={handleChange}
         />
       </Form.Group>
-      
+
       <Button type="submit">Save</Button>
     </Form>
   );

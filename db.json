@@ -1,56 +1,78 @@
 {
   "users": [
     {
-      "email": "jarretc2000@gmail.com",
-      "password": "$2a$10$6obfidMo9XKH5.nwwIO.Kuo6ElyN5./6DOi8NpQRnfiHR.YOECP9C",
+      "email": "jarretcannon@gmail.com",
+      "password": "$2a$10$1gNRLylnOxaH0NrO2XwRee2A55NOyxMac0LDofHgWPC9tXvSpbjni",
       "fullName": "Jarret Cannon",
+      "location": "Redding, CA",
+      "photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/408957822_2473570056157573_4040209485954342341_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=rTKwjbEY8awAX_CaqlZ&_nc_ht=scontent-sjc3-1.xx&oh=00_AfA5LCNPmPnOG9YTdyQxBP0Dwuv6XT7HZKJB7c2PK7oluQ&oe=65FA4835",
       "id": 1
     },
     {
-      "email": "Aaron@gmail.com",
-      "password": "$2a$10$9Fwf9J9MDxSwE0RiwNO6ce6zn.wDcUVCifyug6QOKC.ZFO3iaaYuu",
-      "fullName": "Aaron Sterling",
+      "email": "jon@gmail.com",
+      "password": "$2a$10$fRkX.VkS5ajXf9Q.o1p/Vu.WWMdzDFFLbCFBqkQl4ExoMztIybwEG",
+      "fullName": "Jon Zane",
+      "location": "Austin, TX",
+      "photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.18169-9/20046505_1235069359973084_437553876295977419_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8RcsD1dRYBUAX9230nB&_nc_ht=scontent-sjc3-1.xx&oh=00_AfAq7ZyNKufPWocDTrkMQRVQpuncemrOsQ_551EkYg5fPQ&oe=661C4FF2",
       "id": 2
     },
     {
-      "email": "jon@gmail.com",
-      "password": "$2a$10$2qXuvZIl6rVHYMahwZdHhujEcaZ24CKB5reaj7iCpAQUJor6mDopy",
-      "fullName": "Jon Zane",
+      "email": "Aaron@gmail.com",
+      "password": "$2a$10$AkHy3LgeHv3ptKD8TJeYpeQSYk8VvHtXiPyqjXk.vDv5UiMtroWcu",
+      "fullName": "Aaron Sterling",
+      "location": "Los Angeles, CA",
+      "photo": "https://imgs.search.brave.com/5JAKjvgtlVTHT3iXpilMripGE9_yXGtrtCssrVwXlrk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZHJ1bW1lcndvcmxk/LmNvbS9kcnVtbWVy/d29ybGQ0L2Fhcm9u/c3Rlcmxpbmd2Yi5q/cGc",
       "id": 3
     },
     {
-      "email": "test@gmail.com",
-      "password": "$2a$10$rL2wqA8yw0FRKCPC9w7UO.JsGbp44FGN1sbBBsTelJWRlj.41RUG2",
-      "fullName": "redding, ca",
-      "location": "https://images.pexels.com/photos/20195326/pexels-photo-20195326/free-photo-of-a-woman-in-a-black-hoodie-and-sunglasses.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "photo": "test",
+      "email": "jarret@gmail.com",
+      "password": "$2a$10$t/07kou9PdYh.hCcfQTzHOCcfFTIkoFcCBdfuS1VBHN5KdWtlLVLu",
+      "fullName": "Jarret Cannon",
+      "location": "Redding, CA",
+      "photo": "https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-19/432545264_257684134062330_5653520182913378388_n.jpg?stp=dst-jpg_s320x320&_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=106&_nc_ohc=QWYOsKdllmEAX_2GCFv&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfAK2r5daMBh9cZOzFRQU4jz1kCe1UD4Jp1uuCPlLVVHvg&oe=65FA7CD4&_nc_sid=8b3546",
       "id": 4
     },
     {
-      "email": "jar@gmail.com",
-      "password": "$2a$10$WRdbUHke73Ac5NBnjf/7D.jsVFIcbEDf0fQcTHyCg8FHeRlEbiTQK",
-      "fullName": "redding, ca",
-      "location": "https://images.pexels.com/photos/20195326/pexels-photo-20195326/free-photo-of-a-woman-in-a-black-hoodie-and-sunglasses.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "photo": "test",
+      "email": "Freddie@gmail.com",
+      "password": "$2a$10$I6rTMDCh1jTdhUr.TL99.egGIIcCGIlRgT7KsBDYW.lEE566e7k/a",
+      "fullName": "Freddie Mercury",
+      "location": "London, England",
+      "photo": "https://imgs.search.brave.com/f5l05b8eUCYJsWNI5ptEA4ikKGHoeRllX5EV7u01f_8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90b3du/c3F1YXJlLm1lZGlh/L3NpdGUvMjk1L2Zp/bGVzLzIwMjMvMDEv/YXR0YWNobWVudC1t/ZXJjLmpwZz93PTk4/MCZxPTc1",
       "id": 5
-    },
-    {
-      "email": "g@gmail.com",
-      "password": "$2a$10$rs6yTZF7LGwtb7tx0jmf.OpKhEQso9htdtVUjp0LDVEVvzsNN//JO",
-      "fullName": "redding, ca",
-      "location": "https://images.pexels.com/photos/20195326/pexels-photo-20195326/free-photo-of-a-woman-in-a-black-hoodie-and-sunglasses.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "photo": "pass",
-      "id": 6
     }
   ],
   "posts": [
     {
       "title": "Lost On A Trail",
-      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/3AxnCQ50cpAFlKa4c1sl26?utm_source=generator&theme=0\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/3AxnCQ50cpAFlKa4c1sl26?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
       "credit": "Producer/Mix Engineer",
       "caption": "",
       "userId": 1,
       "id": 1
+    },
+    {
+      "title": "Trouble",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/4SDSJtOAM2kOF1MvOnjbxL?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Artist",
+      "caption": "",
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "title": "Green Eyes",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/1FoCSrNyUVF00C8foohH2G?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Drums",
+      "caption": "",
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "title": "To Be So Lonely",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/5JiH89mHrv9oWHlD0T326z?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Drums",
+      "caption": "",
+      "userId": 3,
+      "id": 4
     },
     {
       "title": "Keep Going",
@@ -58,7 +80,7 @@
       "credit": "Producer/Mix Engineer",
       "caption": "",
       "userId": 1,
-      "id": 2
+      "id": 5
     },
     {
       "title": "Promise Keeper",
@@ -66,31 +88,23 @@
       "credit": "Producer/Mix Engineer",
       "caption": "",
       "userId": 1,
-      "id": 3
-    },
-    {
-      "title": "I Guess",
-      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/0rkKuNq4U8E8KTLq7RRl1Z?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
-      "credit": "Drums",
-      "caption": "",
-      "userId": 2,
-      "id": 4
-    },
-    {
-      "title": "Green Eyes",
-      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/1FoCSrNyUVF00C8foohH2G?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
-      "credit": "Drums",
-      "caption": "",
-      "userId": 2,
-      "id": 5
-    },
-    {
-      "title": "Trouble",
-      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/4SDSJtOAM2kOF1MvOnjbxL?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
-      "credit": "Artist",
-      "caption": "",
-      "userId": 3,
       "id": 6
+    },
+    {
+      "title": "Great Expectations",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/44baFwsbRB2KJNPA0wPlT8?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Producer/Mix Engineer",
+      "caption": "",
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "title": "Killer Queen",
+      "embed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7GqWnsKhMtEW0nzki5o0d8?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+      "credit": "Songwriting/Vocals",
+      "caption": "",
+      "userId": 5,
+      "id": 8
     }
   ]
 }

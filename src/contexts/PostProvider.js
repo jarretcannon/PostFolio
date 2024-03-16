@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import PostContext from "./PostContext";
-import UserContext from '../contexts/UserContext';
+import UserContext from "../contexts/UserContext";
 import axios from "axios";
 
 export const PostProvider = (props) => {
@@ -20,42 +20,39 @@ export const PostProvider = (props) => {
     return axios.get(baseUrl).then((response) => setPosts(response.data));
   }
 
-  function getPostsByUserId(userId){
-    return axios.get(baseUrl + '?userId=' + userId );
+  function getPostsByUserId(userId) {
+    return axios.get(baseUrl + "?userId=" + userId);
   }
 
-function getPost(id){
-  return posts.find(post => post.id === parseInt(id))
-}
+  function getPost(id) {
+    return posts.find((post) => post.id === parseInt(id));
+  }
 
-  function addPost(post){
+  function addPost(post) {
     if (!user?.id) {
-      alert('You need to be logged in!');
+      alert("You need to be logged in!");
       // TODO forward user to log in page
-      throw new Error('You need to be logged in!')
+      throw new Error("You need to be logged in!");
     } else {
-      return axios.post(baseUrl, {...post, userId: user.id})
-      .then(response => {
-        getAllPosts();
-        return new Promise(resolve => resolve(response.data));
-        }
-      );
+      return axios
+        .post(baseUrl, { ...post, userId: user.id })
+        .then((response) => {
+          getAllPosts();
+          return new Promise((resolve) => resolve(response.data));
+        });
     }
-   
   }
 
-function deletePost(id){
-  axios.delete(`${baseUrl}/${id}`)
-  .then(getAllPosts)
-}
+  function deletePost(id) {
+    axios.delete(`${baseUrl}/${id}`).then(getAllPosts);
+  }
 
-function updatePost(id, post){
-  return axios.put(`${baseUrl}/${id}`, post)
-  .then(response => {
-    getAllPosts()
-    return new Promise((resolve) => resolve(response.data))
-  })
-}
+  function updatePost(id, post) {
+    return axios.put(`${baseUrl}/${id}`, post).then((response) => {
+      getAllPosts();
+      return new Promise((resolve) => resolve(response.data));
+    });
+  }
 
   return (
     <PostContext.Provider
@@ -66,11 +63,10 @@ function updatePost(id, post){
         getPost,
         addPost,
         deletePost,
-        updatePost
+        updatePost,
       }}
     >
       {props.children}
     </PostContext.Provider>
   );
 };
-

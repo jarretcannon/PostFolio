@@ -1,15 +1,14 @@
 import React, { useContext } from "react";
 import PostContext from "../contexts/PostContext";
 import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import UserContext from "../contexts/UserContext";
 import "./HomePage.css";
 
 function HomePage() {
-  const { posts, deletePost } = useContext(PostContext);
+  const { posts, deletePost, post } = useContext(PostContext);
   const { getUserById } = useContext(UserContext);
 
-  // Sort posts by id in descending order
   const sortedPosts = [...posts].sort((a, b) => b.id - a.id);
 
   const handleDelete = (id) => {
@@ -29,14 +28,21 @@ function HomePage() {
               <div className="card-body">
                 <h5 className="card-title">{post.title}</h5>
                 <div dangerouslySetInnerHTML={{ __html: post.embed }} />
-                <h7>{getUserById(post.userId)?.fullName}</h7>
+                <Link to={`/profile/${post.userId}`}>
+                  {getUserById(post.userId)?.fullName}
+                </Link>
                 <p className="card-text">Credits: {post.credit}</p>
               </div>
             </div>
           </div>
         ))}
         <div className="create-button">
-          <Button as={Link} to="/create" variant="primary" className="circle-button">
+          <Button
+            as={Link}
+            to="/create"
+            variant="light"
+            className="circle-button"
+          >
             +
           </Button>
         </div>
@@ -46,6 +52,3 @@ function HomePage() {
 }
 
 export default HomePage;
-
-
-

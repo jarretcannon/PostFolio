@@ -18,8 +18,6 @@ import { useContext } from "react";
 import LogoutButton from "./components/logOutUser";
 
 function App() {
-  
-
   return (
     <BrowserRouter>
       <UserProvider>
@@ -40,7 +38,7 @@ function App() {
                 <Nav.Link as={Link} to="/signin">
                   Sign In
                 </Nav.Link>
-               <LogoutButton/>
+                <LogoutButton />
               </Nav>
             </Container>
           </Navbar>
@@ -57,7 +55,8 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="create" element={<CreatePost />} />
               <Route path=":id/edit" element={<UpdateItem />} />
-              <Route path="profile" element={<Profile />} />
+              <Route path="/profile/" element={<Profile />} />
+              <Route path="/profile/:userId" element={<Profile />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/signin" element={<SignIn />} />
               <Route path="*" element={<h1>Page Not Found</h1>} />
@@ -70,4 +69,3 @@ function App() {
 }
 
 export default App;
-

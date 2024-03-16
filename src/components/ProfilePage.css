@@ -1,40 +1,43 @@
-/* ProfilePage.css */
-
 .profile-container {
-    background-color: #e0e1dd;
-    color: black;
-    padding: 20px; /* Adjust padding as needed */
-  }
-  
-  .profile-photo {
-    width: 100%;
-    max-width: 200px;
-    max-height: 200px;
-  }
-  
-  .profile-info {
-    text-align: left;
-  }
-  
-  .card {
-    background-color: white;
-    /* Add any other card-specific styles here */
-  }
-  
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; /* Center vertically */
-    gap: 20px; /* Adjust this as per your preference */
-  }
-  
-  .post-container {
-    width: 300px; /* Set the width of each card */
-    height: 400px; /* Set the height of each card */
-  }
-  
-  
-  /* Add more styles as needed */
-  
-  
+  background-color: #fffcf2;
+  color: #403d39;
+  padding: 20px;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.profile-photo-container {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.card-body .profile-name a {
+  color: white !important;
+  text-decoration: none !important;
+}
+.profile-info {
+  text-align: left;
+}
+
+.card {
+  background-color: white;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 60px;
+}
+
+.post-container {
+  width: 300px;
+  height: 400px;
+}

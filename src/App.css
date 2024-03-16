@@ -1,43 +1,39 @@
-/* Set global html and body styles */
-html, body {
- 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Tenor+Sans&display=swap");
+
+html,
+body {
   color: white;
   margin: 0;
   padding: 0;
+  background-color: #ccc5b9 !important;
 }
 
-/* Navbar styles */
-
-
-/* .navbar-brand {
-  color: white !important;
+.navbar-brand {
+  color: #252422 !important;
 }
 
 .navbar a {
-  color: white !important;
-} */
+  color: #252422 !important;
+}
 
-/* Card styles */
 .post-container,
 .card {
-  
   color: white;
 }
 
-/* Button styles */
 .btn {
   background-color: white;
   color: black;
 }
 
-/* Main styles */
 .main {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-top: 56px;
 }
 
-/* Create button styles */
 .create-button {
   position: fixed;
   bottom: 20px;
@@ -54,11 +50,3 @@ html, body {
   justify-content: center;
   font-size: 24px;
 }
-
-/* *{
-background-color: black;
-} */
-
-
-
-

@@ -2,13 +2,15 @@
 import React, { useContext } from "react";
 import { Nav } from "react-bootstrap";
 import UserContext from "../contexts/UserContext";
+import { useNavigate } from "react-router-dom";
 
 const LogoutButton = () => {
   const { signOutUser } = useContext(UserContext);
-
+  let navigate = useNavigate();
   const handleLogout = () => {
     if (signOutUser) {
       signOutUser();
+      navigate("/signin");
     }
   };
 
