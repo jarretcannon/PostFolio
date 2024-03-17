@@ -18,6 +18,17 @@ import { useContext } from "react";
 import LogoutButton from "./components/logOutUser";
 
 function App() {
+
+  const {user} = useContext(UserContext);
+
+function userProfile(){
+  if (user) {
+    return `/profile/${user.id}`;
+  } else {
+    return "/signin";
+  }
+}
+
   return (
     <BrowserRouter>
       <UserProvider>
@@ -29,7 +40,7 @@ function App() {
                 <Nav.Link as={Link} to="/">
                   Home
                 </Nav.Link>
-                <Nav.Link as={Link} to="/profile">
+                <Nav.Link as={Link} to={userProfile()}>
                   Profile
                 </Nav.Link>
                 <Nav.Link as={Link} to="/signup">

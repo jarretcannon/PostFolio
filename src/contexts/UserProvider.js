@@ -43,8 +43,6 @@ export const UserProvider = (props) => {
     });
   }
 
-
-
   function signInUser(email, password) {
     let user = { email, password };
 
