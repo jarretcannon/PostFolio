@@ -16,44 +16,17 @@ import SignIn from "./components/SignIn";
 import UserContext from "./contexts/UserContext";
 import { useContext } from "react";
 import LogoutButton from "./components/logOutUser";
+import Navigation from "./components/Navigation";
+import UserProfile from "./components/UserProfilePage";
 
 function App() {
 
-  const {user} = useContext(UserContext);
 
-function userProfile(){
-  if (user) {
-    return `/profile/${user.id}`;
-  } else {
-    return "/signin";
-  }
-}
 
   return (
     <BrowserRouter>
       <UserProvider>
-        <div className="nav">
-          <Navbar fixed="top">
-            <Container>
-              <Navbar.Brand>Postfolio</Navbar.Brand>
-              <Nav className="me-auto">
-                <Nav.Link as={Link} to="/">
-                  Home
-                </Nav.Link>
-                <Nav.Link as={Link} to={userProfile()}>
-                  Profile
-                </Nav.Link>
-                <Nav.Link as={Link} to="/signup">
-                  Sign Up
-                </Nav.Link>
-                <Nav.Link as={Link} to="/signin">
-                  Sign In
-                </Nav.Link>
-                <LogoutButton />
-              </Nav>
-            </Container>
-          </Navbar>
-        </div>
+       <Navigation />
 
         <div className="main">
           <Container className="main-container">
@@ -68,6 +41,7 @@ function userProfile(){
               <Route path=":id/edit" element={<UpdateItem />} />
               <Route path="/profile/" element={<Profile />} />
               <Route path="/profile/:userId" element={<Profile />} />
+              <Route path="/userprofile/:userId" element={<UserProfile />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/signin" element={<SignIn />} />
               <Route path="*" element={<h1>Page Not Found</h1>} />

@@ -28,7 +28,7 @@ function HomePage() {
               <div className="card-body">
                 <h5 className="card-title">{post.title}</h5>
                 <div dangerouslySetInnerHTML={{ __html: post.embed }} />
-                <Link to={`/profile/${post.userId}`}>
+                <Link to={`/userprofile/${post.userId}`}>
                   {getUserById(post.userId)?.fullName}
                 </Link>
                 <p className="card-text">Credits: {post.credit}</p>
@@ -40,7 +40,7 @@ function HomePage() {
           <Button
             as={Link}
             to="/create"
-            variant="light"
+            variant="dark"
             className="circle-button"
           >
             +

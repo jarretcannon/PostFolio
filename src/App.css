@@ -5,7 +5,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  background-color: #ccc5b9 !important;
+  background-color: #fffcf2 !important;
 }
 
 .navbar-brand {
@@ -21,10 +21,7 @@ body {
   color: white;
 }
 
-.btn {
-  background-color: white;
-  color: black;
-}
+
 
 .main {
   text-align: center;
